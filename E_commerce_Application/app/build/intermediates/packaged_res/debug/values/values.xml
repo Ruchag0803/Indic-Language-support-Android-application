@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="orange">#F57C00</color>
+    <color name="purple_200">#9F66F1</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#18776D</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">E_commerce_Application</string>
+    <string name="gcm_defaultSenderId" translatable="false">706694777893</string>
+    <string name="google_api_key" translatable="false">AIzaSyCwUwyHv0AI3-39woLSUieH2tXfYGT0NH4</string>
+    <string name="google_app_id" translatable="false">1:706694777893:android:790b5c281b3087313843cc</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCwUwyHv0AI3-39woLSUieH2tXfYGT0NH4</string>
+    <string name="google_storage_bucket" translatable="false">e-commerce-application-29d81.appspot.com</string>
+    <string name="project_id" translatable="false">e-commerce-application-29d81</string>
+    <style name="Base.Theme.E_commerce_Application" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/orange</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
+    <style name="Theme.E_commerce_Application" parent="Base.Theme.E_commerce_Application"/>
+</resources>

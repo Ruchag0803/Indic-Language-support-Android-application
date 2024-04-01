@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".clothes">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E6DCC9"
+        android:orientation="horizontal">
+
+        <!-- Home Logo -->
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Message Text View -->
+        <TextView
+            android:id="@+id/message_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop for Food :)"
+            android:textSize="20sp"
+            android:textColor="#100202"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_gravity="center"
+            android:textStyle="italic|bold"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"> <!-- Add margin top here -->
+
+            <!-- Product Image -->
+            <ImageView
+                android:id="@+id/product1"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/food1" /> <!-- Replace with actual image resource -->
+
+            <!-- Product Details -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <!-- Product Name -->
+                <TextView
+                    android:id="@+id/product1_name"
+                    android:text="Dress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- Product Description -->
+                <TextView
+                    android:id="@+id/product1_description"
+                    android:text="Vegetable Basket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- Product Price -->
+                <TextView
+                    android:id="@+id/product1_price"
+                    android:text="Rs.356"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+
+                <!-- Add to Cart Button -->
+                <Button
+                    android:id="@+id/p1"
+                    android:text="Add to Cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"> <!-- Add margin top here -->
+
+            <!-- Product Image -->
+            <ImageView
+                android:id="@+id/product2_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/milk" /> <!-- Replace with actual image resource -->
+
+            <!-- Product Details -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <!-- Product Name -->
+                <TextView
+                    android:id="@+id/product2_name"
+                    android:text="Organic Milk- 3L"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- Product Description -->
+                <TextView
+                    android:id="@+id/product2_description"
+                    android:text="Fresh dairy goodness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- Product Price -->
+                <TextView
+                    android:id="@+id/product2_price"
+                    android:text="Rs. 159"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+
+                <!-- Add to Cart Button -->
+                <Button
+                    android:id="@+id/p2"
+                    android:text="Add to Cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"> <!-- Add margin top here -->
+
+            <!-- Product Image -->
+            <ImageView
+                android:id="@+id/product3_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/food2" /> <!-- Replace with actual image resource -->
+
+            <!-- Product Details -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <!-- Product Name -->
+                <TextView
+                    android:id="@+id/product3_name"
+                    android:text="Bread-Basket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- Product Description -->
+                <TextView
+                    android:id="@+id/product3_description"
+                    android:text="Oven-baked goodness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- Product Price -->
+                <TextView
+                    android:id="@+id/product3_price"
+                    android:text="Rs. 499"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+
+                <!-- Add to Cart Button -->
+                <Button
+                    android:id="@+id/p3"
+                    android:text="Add to Cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"> <!-- Add margin top here -->
+
+            <!-- Product Image -->
+            <ImageView
+                android:id="@+id/product4_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/grocery1" /> <!-- Replace with actual image resource -->
+
+            <!-- Product Details -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <!-- Product Name -->
+                <TextView
+                    android:id="@+id/product4_name"
+                    android:text="Grocery-basket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- Product Description -->
+                <TextView
+                    android:id="@+id/product4_description"
+                    android:text="Everyday essentials shopping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- Product Price -->
+                <TextView
+                    android:id="@+id/product4_price"
+                    android:text="Rs. 799"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+
+                <!-- Add to Cart Button -->
+                <Button
+                    android:id="@+id/p4"
+                    android:text="Add to Cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
